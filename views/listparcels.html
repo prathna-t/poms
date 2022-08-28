@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href = "styles.css"/>
+    <h1> Parcel Management System! </h1>
+        <a href = "/">Home</a> 
+        <a href = "/addparcel">Add New Parcel </a>
+        <a href = "/getparcels"> List Parcels </a>
+        <a href = "/delparcel"> Delete Parcels </a>
+        <a href = "/updateparcel"> Update Parcels </a>
+        <a href = "/updatesenderweight"> Update Parcel Sender and Weight </a>
+        <hr/>
+    <style>
+        table,th,td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+   
+    </br>
+    <h3>The list of parcels are:</h3>
+        <table>
+            <tr>
+                <td>#</td>
+                <td>ID</td>
+                <td>Sender</td>
+                <td>Address</td>
+                <td>Weight</td>
+                <td>Fragile</td>
+            </tr>
+            <% for ( let i =0; i < fleet.length;i++){%>
+                <tr>
+                    <td>
+                        <%= (i+1) %>
+                    </td>
+                    <td>
+                        <%= fleet[i]._id %>
+                    </td>
+                    <td>
+                        <%= fleet[i].sender %>
+                    </td>
+                    <td>
+                        <%= fleet[i].address%>
+                    </td>
+                    <td>
+                        <%= fleet[i].weight %>
+                    </td>
+                    <td>
+                        <%= fleet[i].fragile %>
+                    </td>
+                <% }%>
+            </tr>
+     </table>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href = "styles.css"/>
+        <h1> Parcel Management System! </h1>
+        <a href = "/">Home</a> 
+        <a href = "/addparcel">Add New Parcel </a>
+        <a href = "/getparcels"> List Parcels </a>
+        <a href = "/delparcel"> Delete Parcels </a>
+        <a href = "/updateparcel"> Update Parcels </a>
+        <a href = "/updatesenderweight"> Update Parcel Sender and Weight </a>
+        <hr/>
+
+    <body>
+    <h3> Update your Parcel by ID number! </h3>
+    <form action="/updateparcelpost" method="POST">
+        ID Number:
+        <input type="text" name="id" /> </br>
+        Sender:
+        <input type="text" name="sender" /> </br>
+        Address:
+        <input type="text" name="address" /> </br>
+        Weight:
+        <input type="number" name="weight" /> </br>
+        Fragile:
+        <input type="text" name="fragile" /> </br>
+        
+
+        <button>Submit</button>
+    </form>
+</body>
+</html>

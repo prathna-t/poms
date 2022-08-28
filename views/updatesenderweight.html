@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link rel="stylesheet" href = "styles.css"/>
+        <h1> Parcel Management System! </h1>
+        <a href = "/">Home</a> 
+        <a href = "/addparcel">Add New Parcel </a>
+        <a href = "/getparcels"> List Parcels </a>
+        <a href = "/delparcel"> Delete Parcels </a>
+        <a href = "/updateparcel"> Update Parcels </a>
+        <a href = "/updatesenderweight"> Update Parcel Sender and Weight </a>
+        <hr/>
+
+    <body>
+    <h3> Update your Parcel Sender and Weight! </h3>
+    <form action="/updatesenderweightpost" method="POST">
+        Sender:
+        <input type="text" name="sender" /> </br>
+        Weight:
+        <input type="number" name="weight" /> </br>
+        
+
+        <button>Submit</button>
+    </form>
+</body>
+</html>
