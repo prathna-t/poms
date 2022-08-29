@@ -14,6 +14,9 @@ app.set('view engine', 'html');
 
 app.use(express.urlencoded({extended: true}));
 
+
+app.use("/css", express.static(path.join(__dirname, "node_modules/bootstrap/dist/css")));
+app.use("/css", express.static(path.join(__dirname, "node_modules/bootstrap/dist/js")));
 app.use(express.static("public/images"));
 app.use(express.static("public/css"));
 
