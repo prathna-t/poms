@@ -1,7 +1,6 @@
 <html>
 
 <head>
-    <div class = "jumbotron text-center">
     <link rel="stylesheet" href = "styles.css"/>
     <link rel = "stylesheet" href = "./css/bootstrap.min.css"/>
     <h1> Parcel Management System! </h1>
@@ -19,41 +18,24 @@
             border: 1px solid black;
         }
     </style>
-    </div>
 </head>
 
 <body>
    
     </br>
-    <h3>The list of parcels are:</h3>
+    <h3>The list of parcels by sender are:</h3>
         <table class = 'table table-hover table-dark'>
             <tr>
                 <td>#</td>
-                <td>ID</td>
                 <td>Sender</td>
-                <td>Address</td>
-                <td>Weight</td>
-                <td>Fragile</td>
             </tr>
-            <% for ( let i =0; i < parcel.length;i++){%>
+            <% for ( let i =0; i < parcelS.length;i++){%>
                 <tr>
                     <td>
                         <%= (i+1) %>
                     </td>
                     <td>
-                        <%= parcel[i]._id %>
-                    </td>
-                    <td>
-                        <%= parcel[i].sender %>
-                    </td>
-                    <td>
-                        <%= parcel[i].address%>
-                    </td>
-                    <td>
-                        <%= parcel[i].weight %>
-                    </td>
-                    <td>
-                        <%= parcel[i].fragile %>
+                        <%= parcelS[i].sender %>
                     </td>
                 <% }%>
             </tr>
