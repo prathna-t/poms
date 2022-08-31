@@ -1,31 +1,46 @@
 <html>
     <head>
-        <link rel="stylesheet" href = "styles.css"/>
-        <link rel = "stylesheet" href = "./css/bootstrap.min.css"/>
-        
-        <h1> Parcel Management System! </h1>
-        <a type = "button" class = "btn btn-primary btn-log" href = "/">Home</a> 
-        <a type = "button" class = "btn btn-primary btn-log" href = "/addparcel">Add New Parcel </a>
-        <a type = "button" class = "btn btn-primary btn-log" href = "/getparcels"> List Parcels </a>
-        <a type = "button" class = "btn btn-primary btn-log" href = "/delparcel"> Delete Parcels </a>
-        <a type = "button" class = "btn btn-primary btn-log" href = "/updateparcel"> Update Parcels </a>
-        <a type = "button" class = "btn btn-primary btn-log" href = "/updatesenderweight"> Update Parcel Sender and Weight </a>
-        <hr/>
+        <div class = "jumbotron text-center">
+            <link rel="stylesheet" href = "styles.css"/>
+            <link rel = "stylesheet" href = "./css/bootstrap.min.css"/>
+            <h1> Parcel Management System! </h1>
+            <br>
+                <a type = "button" class = "btn btn-primary btn-lg" href = "/">Home</a> 
+                <a type = "button" class = "btn btn-primary btn-lg" href = "/addparcel">Add New Parcel </a>
+                <a type = "button" class = "btn btn-primary btn-lg" href = "/getparcels"> List Parcels </a>
+                <a type = "button" class = "btn btn-primary btn-lg" href = "/getparcelssender"> List Parcels Sender</a>
+                <a type = "button" class = "btn btn-primary btn-lg" href = "/getparcelsweight"> List Parcels Weight</a>
+                <a type = "button" class = "btn btn-primary btn-lg" href = "/delparcel"> Delete Parcels </a>
+                <a type = "button" class = "btn btn-primary btn-lg" href = "/updateparcel"> Update Parcels </a>
+                
+                <hr/>
+            <style>
+                table,th,td {
+                    border: 1px solid black;
+                }
+            </style>
+            </div>
     </head>
     <body>
         <h3> Add a New Parcel! </h3>
+        <table>
         <form action="/addparcelpost" method="POST">
+            <br>
             Sender:
             <input type="text" name="sender" /> </br>
+            
             Address:
             <input type="text" name="address" /> </br>
+            
             Weight:
             <input type="number" name="weight" /> </br>
+           
             Fragile:
             <input type="text" name="fragile" /> </br>
             
     
-            <button>Submit</button>
+            <button type="button" class="btn btn-outline-primary btn-sm">Submit</button>
         </form>
+    </table>
     </body>
 </html>

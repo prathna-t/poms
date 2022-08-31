@@ -188,6 +188,9 @@ app.get('/getparcelsweight',function(req,res){
 });
 
 
+// app.get('*', function(req, res){
+//     res.sendFile(path.join(__dirname,"views/404.html"));
+// });
 
 
 // //extra task
@@ -208,5 +211,4 @@ app.get('/getparcelsweight',function(req,res){
 // });
 
 
-// app.get('*', function(req, res){
-//     res.sendFile(path.join(__dirname,"views/404.html"));
+

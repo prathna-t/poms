@@ -1,14 +1,25 @@
 <html>
     <head>
-        <link rel="stylesheet" href = "styles.css"/>
-        <h1> Parcel Management System! </h1>
-        <a href = "/">Home</a> 
-        <a href = "/addparcel">Add New Parcel </a>
-        <a href = "/getparcels"> List Parcels </a>
-        <a href = "/delparcel"> Delete Parcels </a>
-        <a href = "/updateparcel"> Update Parcels </a>
-        <a href = "/updatesenderweight"> Update Parcel Sender and Weight </a>
-        <hr/>
+        <div class = "jumbotron text-center">
+            <link rel="stylesheet" href = "styles.css"/>
+            <link rel = "stylesheet" href = "./css/bootstrap.min.css"/>
+            <h1> Parcel Management System! </h1>
+            <br>
+                <a type = "button" class = "btn btn-primary btn-lg" href = "/">Home</a> 
+                <a type = "button" class = "btn btn-primary btn-lg" href = "/addparcel">Add New Parcel </a>
+                <a type = "button" class = "btn btn-primary btn-lg" href = "/getparcels"> List Parcels </a>
+                <a type = "button" class = "btn btn-primary btn-lg" href = "/getparcelssender"> List Parcels Sender</a>
+                <a type = "button" class = "btn btn-primary btn-lg" href = "/getparcelsweight"> List Parcels Weight</a>
+                <a type = "button" class = "btn btn-primary btn-lg" href = "/delparcel"> Delete Parcels </a>
+                <a type = "button" class = "btn btn-primary btn-lg" href = "/updateparcel"> Update Parcels </a>
+                
+                <hr/>
+            <style>
+                table,th,td {
+                    border: 1px solid black;
+                }
+            </style>
+            </div>
     </head>
     <body>
         <h3> Delete a parcel! </h3>
@@ -16,7 +27,7 @@
             ID:
             <input type="text" name="id" /> </br>
         
-            <button input type="submit">Delete Parcel </button>
+            <button type="button" class="btn btn-outline-primary btn-sm"">Delete Parcel </button>
         </form>
     </body>
 </html>
